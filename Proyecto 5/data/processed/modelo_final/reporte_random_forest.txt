@@ -1,0 +1,49 @@
+LABORATORIO 5 - RANDOM FOREST FINAL
+Sistema ambiental inteligente - Edge AI
+============================================
+
+Variables de entrada:
+- temp_c
+- humidity
+- ldr_pct
+- mq2_pct
+
+Codificación de clases:
+0 -> ALERTA
+1 -> CALUROSO
+2 -> CONTAMINADO
+3 -> NORMAL
+4 -> OSCURO
+
+Métricas:
+Accuracy : 1.0000
+Precision: 1.0000
+Recall   : 1.0000
+F1 macro : 1.0000
+
+Reporte de clasificación:
+              precision    recall  f1-score   support
+
+      ALERTA       1.00      1.00      1.00        76
+    CALUROSO       1.00      1.00      1.00        80
+ CONTAMINADO       1.00      1.00      1.00        73
+      NORMAL       1.00      1.00      1.00        77
+      OSCURO       1.00      1.00      1.00        73
+
+    accuracy                           1.00       379
+   macro avg       1.00      1.00      1.00       379
+weighted avg       1.00      1.00      1.00       379
+
+Matriz de confusión:
+[[76  0  0  0  0]
+ [ 0 80  0  0  0]
+ [ 0  0 73  0  0]
+ [ 0  0  0 77  0]
+ [ 0  0  0  0 73]]
+
+Importancia de variables:
+ feature  importance
+  temp_c    0.462121
+ mq2_pct    0.266124
+humidity    0.162299
+ ldr_pct    0.109455
